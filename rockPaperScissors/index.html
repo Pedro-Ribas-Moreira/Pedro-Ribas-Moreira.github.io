@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock Paper and Scissors</title>
+  </head>
+  <body>
+    <main>
+      <section class="game">
+        <h1>Rock Paper and Scissors</h1>
+        <div class="playerInput">
+          <div><h3>Choose your weapon:</h3></div>
+          <div class="btn-div">
+            <button class="playerSelection rockBtn">Rock</button>
+            <button class="playerSelection paperBtn">Paper</button>
+            <button class="playerSelection ScissorsBtn">Scissors</button>
+            <button class="resetGame" style="display: none">Play Again!</button>
+          </div>
+        </div>
+        <div class="mainResult">
+          <div class="score">
+            <h3>Scoreboard</h3>
+            <div>
+              <h3>Player: <span class="playerScore">0</span></h3>
+              <h3>Computer: <span class="computerScore">0</span></h3>
+            </div>
+          </div>
+          <h2 class="resultText">New Game!</h2>
+          <p class="resultDescription"></p>
+          <h2 class="gameOverText">Game Over!</h2>
+          <div class="resultsImg">
+            <div class="playerResult">
+              <h3>Your move was:</h3>
+              <div class="playerPlaceHolder" style="display: none"></div>
+              <img
+                src="./assets/rock-svgrepo-com.svg"
+                class="rockSVG"
+                alt="rock"
+              />
+              <img
+                src="./assets/paper-svgrepo-com.svg"
+                class="paperSVG"
+                alt="paper"
+              />
+              <img
+                src="./assets/scissors-svgrepo-com.svg"
+                class="scissorsSVG"
+                alt="scissors "
+              />
+            </div>
+            <div class="computerResult">
+              <h3>Computer move was:</h3>
+              <div class="computerPlaceHolder" style="display: none"></div>
+              <img
+                src="./assets/rock-svgrepo-com.svg"
+                class="rockSVG"
+                alt="rock"
+              />
+              <img
+                src="./assets/paper-svgrepo-com.svg"
+                class="paperSVG"
+                alt="paper"
+              />
+              <img
+                src="./assets/scissors-svgrepo-com.svg"
+                class="scissorsSVG"
+                alt="scissors"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>Developed by Pedro Moreira © 2025</footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
